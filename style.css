@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #0f172a; 
+  --secondary-color: #334155;
+  --accent-color: #2563eb; 
+  --bg-color: #f8fafc;
+  --danger-bg: #fef2f2;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.corporate-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1e293b 100%);
+  color: white;
+  padding: 40px 20px 80px 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-tight { letter-spacing: -0.025em; }
+
+.wrapper-calendar {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.main-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.fc-theme-standard th {
+  padding: 10px 0;
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: var(--secondary-color);
+  border-color: #e2e8f0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.4rem !important;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.fc .fc-button-primary {
+  background-color: #ffffff !important;
+  color: var(--secondary-color) !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 500;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.fc-event {
+  cursor: pointer;
+  font-size: 0.82em;
+  padding: 5px;
+  margin: 2px 6px !important;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.day-penuh {
+  background-color: var(--danger-bg) !important;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(252, 165, 165, 0.08) 10px, rgba(252, 165, 165, 0.08) 20px);
+}
+
+.swal2-popup { border-radius: 16px !important; padding: 24px !important; }
+.swal2-title { color: var(--primary-color) !important; font-weight: 700 !important; }
+.swal2-confirm { background-color: var(--accent-color) !important; border-radius: 8px !important; }
+.swal2-cancel { border-radius: 8px !important; }
+
+@media (max-width: 768px) {
+  .corporate-header { padding: 20px 10px 50px 10px; }
+  .header-title { font-size: 1.25rem; }
+  .header-subtitle { font-size: 0.85rem; }
+  .wrapper-calendar { margin-top: -30px; margin-bottom: 20px; }
+  .main-card { padding: 10px; border-radius: 12px; }
+  .fc .fc-toolbar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px !important; }
+  .fc .fc-toolbar-title { font-size: 1.15rem !important; }
+  .fc-theme-standard th { font-size: 0.65rem; padding: 6px 0; }
+  .fc .fc-daygrid-day-number { font-size: 0.8rem; padding: 4px; }
+  .fc-event { font-size: 0.7rem; padding: 3px; margin: 2px !important; }
+  .swal2-popup { padding: 15px !important; width: 95% !important; }
+}
