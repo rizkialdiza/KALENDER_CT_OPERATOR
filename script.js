@@ -134,7 +134,7 @@ function prosesKlikKalender(tanggalDiklikISO) {
     Swal.fire({
       icon: 'warning',
       title: 'Pengajuan Ditutup',
-      html: `<div class='alert alert-warning p-2 small fw-semibold mb-3' style='text-align: left;'>*Maaf Cuti Tahunan hanya dapat diambil H-3 dari tanggal diambilnya Cuti Tahunan - Sesuai dengan Internal Memo CUTI TAHUNAN*</div>` + htmlDaftarCuti,
+      html: `<div class='alert alert-warning p-2 small fw-semibold mb-3' style='text-align: left;'>Maaf Cuti Tahunan hanya dapat diambil H-3 dari tanggal pelaksanaannya Cuti Tahunan</div>` + htmlDaftarCuti,
       confirmButtonText: 'Tutup',
       confirmButtonColor: '#64748b'
     });
@@ -158,7 +158,7 @@ function prosesKlikKalender(tanggalDiklikISO) {
         </div>
         ${htmlDaftarCuti}
         <div class="text-start mb-2">
-          <label class="form-label small fw-semibold text-secondary mb-1">NRP Pegawai</label>
+          <label class="form-label small fw-semibold text-secondary mb-1">NRP Operator</label>
           <input id="swal-nrp" class="form-control form-control-sm" type="number" placeholder="Masukkan NRP untuk auto-fill..." autocomplete="off">
           <div id="nrp-feedback" class="form-text small" style="display:none;"></div>
         </div>
